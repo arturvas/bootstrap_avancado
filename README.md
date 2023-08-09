@@ -1,6 +1,4 @@
-# bootstrap_avancado
-
-Aulas de Bootstrap Avançado pela EBAC.
+# Aulas de Bootstrap Avançado pela EBAC.
 
 Na pasta `lib` está todos os arquivos de terceiros. Nela contém:
 
@@ -9,4 +7,6 @@ Na pasta `lib` está todos os arquivos de terceiros. Nela contém:
 - `bootstrap.bundle.min.js`
 - `bootstrap.min.css`
 
-2. ...
+---
+
+Cada `branch` com seu respectivo assunto.
