@@ -14,11 +14,16 @@
     >
       Abrir Modal
     </button>
-    <div class="modal" id="exemplo-modal">
+    <div class="modal" id="exemplo-modal" data-bs-backdrop="static">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5>Título da Modal</h5>
+            <button
+              data-bs-dismiss="modal"
+              class="btn-close"
+              type="button"
+            ></button>
           </div>
           <div class="modal-body">
             <p>
@@ -29,7 +34,20 @@
             </p>
           </div>
           <div class="modal-footer">
-            <h1>Rodapé da modal</h1>
+            <button
+              class="btn btn-danger"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button
+              class="btn btn-success"
+              type="button"
+              data-bs-dismiss="modal"
+            >
+              Confirmar
+            </button>
           </div>
         </div>
       </div>
