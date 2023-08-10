@@ -7,7 +7,33 @@
     <title>Bootstrap</title>
   </head>
   <body>
-    <h1>Bootstrap</h1>
+    <button
+      class="btn btn-success"
+      data-bs-toggle="modal"
+      data-bs-target="#exemplo-modal"
+    >
+      Abrir Modal
+    </button>
+    <div class="modal" id="exemplo-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Título da Modal</h5>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+              ex sit in, perspiciatis nihil atque repellat aspernatur suscipit
+              eum. Perferendis beatae commodi quod nesciunt voluptates placeat
+              reiciendis debitis alias. Deleniti.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <h1>Rodapé da modal</h1>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./lib/bootstrap.bundle.min.js"></script>
   </body>
 </html>
