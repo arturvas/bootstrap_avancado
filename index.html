@@ -7,7 +7,21 @@
     <title>Bootstrap</title>
   </head>
   <body>
-    <h1>Bootstrap</h1>
+    <div class="container">
+      <div class="dropdown">
+        <button
+          data-bs-toggle="dropdown"
+          class="btn btn-primary dropdown-toggle"
+        >
+          Cadastrar
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+          <li class="dropdown-item"><a href="#">Novo Usuário</a></li>
+          <li class="dropdown-item"><a href="#">Novo Fornecedor</a></li>
+          <li class="dropdown-item"><a href="#">Novo Funcionário</a></li>
+        </ul>
+      </div>
+    </div>
     <script src="./lib/bootstrap.bundle.min.js"></script>
   </body>
 </html>
