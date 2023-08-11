@@ -13,13 +13,26 @@
       .nav-link {
         text-align: center;
       }
+
+      section {
+        height: 100vh;
+        background-color: #ccc;
+        padding-top: 70px;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+      }
     </style>
   </head>
   <body>
-    <!-- navbar teremos um logo e links de navegacao -->
-    <header>
+    <!-- mudar o item que esta ativo conforme rolamos a pagina -->
+    <header id="cabecalho">
       <div class="navbar navbar-expand-lg">
-        <div class="container-sm">
+        <div class="container">
           <h1>Título da pagina</h1>
           <button
             type="button"
@@ -32,22 +45,36 @@
           <nav class="collapse navbar-collapse justify-content-end" id="menu">
             <ul class="nav navbar-nav nav-pills">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Início</a>
+                <a class="nav-link active" href="#inicio">Início</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Produtos</a>
+                <a class="nav-link" href="#produtos">Produtos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Promoções</a>
+                <a class="nav-link" href="#promocoes">Promoções</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+                <a class="nav-link" href="#contato">Contato</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" class="">
+      <section id="inicio">
+        <h2>Início</h2>
+      </section>
+      <section id="produtos">
+        <h2>Produtos</h2>
+      </section>
+      <section id="promocoes">
+        <h2>Promoções</h2>
+      </section>
+      <section id="contato">
+        <h2>Contato</h2>
+      </section>
+    </div>
     <script src="./lib/bootstrap.bundle.min.js"></script>
   </body>
 </html>
