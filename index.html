@@ -7,7 +7,38 @@
     <title>Bootstrap</title>
   </head>
   <body>
-    <h1>Bootstrap</h1>
+    <!-- navbar teremos um logo e links de navegacao -->
+    <header>
+      <div class="navbar">
+        <div class="container-sm">
+          <h1>Título da pagina</h1>
+          <button
+            type="button"
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <nav class="collapse navbar-collapse" id="menu">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Promoções</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
     <script src="./lib/bootstrap.bundle.min.js"></script>
   </body>
 </html>
