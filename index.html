@@ -58,6 +58,9 @@
               </li>
             </ul>
           </nav>
+          <button id="btn-check-email" class="btn btn-warning" type="button">
+            Inbox
+          </button>
         </div>
       </div>
     </header>
@@ -111,6 +114,39 @@
         <h2>Contato</h2>
       </section>
     </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="mensagens-alerta" class="toast">
+        <header class="toast-header">
+          <strong>Importante</strong>
+        </header>
+        <div class="toast-body">
+          Você possui 10 mensagens não lidas.
+          <div class="mt-2 pt-2 border-top">
+            <button
+              data-bs-dismiss="toast"
+              class="btn btn-danger"
+              type="button"
+            >
+              Descartar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script>
+      const ativadorToast = document.getElementById("btn-check-email");
+      const mensagem = document.getElementById("mensagens-alerta");
+
+      // caso o js nao retorne o elemento (ativador toast), essa constante pode ser undefined
+      if (ativadorToast) {
+        ativadorToast.addEventListener("click", function () {
+          const toast = new bootstrap.Toast(mensagem);
+          toast.show(); //função de exibição do Toast
+        });
+      }
+    </script>
   </body>
 </html>
