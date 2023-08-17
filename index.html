@@ -6,17 +6,23 @@
     <link rel="stylesheet" href="./lib/bootstrap.min.css" />
     <title>Bootstrap</title>
     <style>
+      body {
+        background-color: rgb(244, 244, 244);
+      }
       .carousel-control-prev {
         background: linear-gradient(to left, transparent, rgba(0, 0, 0, 0.2));
       }
       .carousel-control-next {
         background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2));
       }
+      .card-title {
+        padding-bottom: 15px;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <!-- slide da aula -->
+      <!-- carousel -->
       <div id="carousel-home" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div data-bs-interval="4000" class="carousel-item active">
@@ -59,6 +65,102 @@
         >
           <span class="carousel-control-next-icon"></span>
         </button>
+      </div>
+      <!-- fim carousel -->
+      <div class="row pt-5">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              class="d-block w-100"
+              src="https://livrariaguilhermefreire.com.br/image/cache/data/api/produtos/28559-142x214.jpg?1685541290"
+            />
+            <div class="card-body text-center">
+              <h1 class="fs-6 fw-light card-subtitle">Valentina Di Marco</h1>
+              <h2 class="fs-5 fw-bold card-title">
+                Um casal exemplar: Santa Gianna Beretta e Pietro Molla
+              </h2>
+              <div class="price d-grid">
+                <del>R$ 54,90</del>
+                <strong class="fs-5">R$ 41,18</strong>
+              </div>
+              <a href="#" class="btn btn-outline-success mt-2">Add Carrinho</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              class="d-block w-100"
+              src="https://livrariaguilhermefreire.com.br/image/cache/data/api/produtos/28663-142x214.jpg?1687361361"
+            />
+            <div class="card-body text-center">
+              <h1 class="fs-6 fw-light card-subtitle">Otto Maria Carpeaux</h1>
+              <h2 class="fs-5 fw-bold card-title">
+                Pequena bibliografia crítica da literatura brasileira
+              </h2>
+              <div class="price d-grid">
+                <del>R$ 109,90</del>
+                <strong class="fs-5">R$ 82,43</strong>
+              </div>
+              <a href="#" class="btn btn-outline-success mt-2">Add Carrinho</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              class="d-block w-100"
+              src="https://editoraconcreta.com.br/image/cache/data/api/produtos/23137-142x214.jpg?1652115022"
+            />
+            <div class="card-body text-center">
+              <h1 class="fs-6 fw-light card-subtitle">Luís de Camões</h1>
+              <h2 class="fs-5 fw-bold card-title">
+                Os Lusíadas (edição didática) - Volume II
+              </h2>
+              <div class="price d-grid">
+                <del>R$ 54,90</del>
+                <strong class="fs-5">R$ 41,18</strong>
+              </div>
+              <a href="#" class="btn btn-outline-success mt-2">Add Carrinho</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              class="d-block w-100"
+              src="https://livrariaguilhermefreire.com.br/image/cache/data/api/produtos/22583-142x214.jpg?1652115094"
+            />
+            <div class="card-body text-center">
+              <h1 class="fs-6 fw-light card-subtitle">Homero</h1>
+              <h2 class="fs-5 fw-bold card-title">Ilíada</h2>
+              <div class="price d-grid">
+                <del>R$ 99,90</del>
+                <strong class="fs-5">R$ 54,95</strong>
+              </div>
+              <a href="#" class="btn btn-outline-success mt-2">Add Carrinho</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              class="d-block w-100"
+              src="https://livrariaguilhermefreire.com.br/image/cache/data/api/produtos/756-142x214.jpg?1675702481"
+            />
+            <div class="card-body text-center">
+              <h1 class="fs-6 fw-light card-subtitle">Richard M. Weaver</h1>
+              <h2 class="fs-5 fw-bold card-title">
+                As idéias tem Consequências
+              </h2>
+              <div class="price d-grid">
+                <del>R$ 65,90</del>
+                <strong class="fs-5">R$ 52,72</strong>
+              </div>
+              <a href="#" class="btn btn-outline-success mt-2">Add Carrinho</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
